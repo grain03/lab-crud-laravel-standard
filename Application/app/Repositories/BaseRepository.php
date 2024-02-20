@@ -24,10 +24,6 @@ abstract class BaseRepository
     {
         return $this->model->findOrFail($projectId);
     }
-    public function show($id)
-    {
-        return $this->model->findOrFail($id);
-    }
 
     // update
     public function update(array $validatedData, $id)

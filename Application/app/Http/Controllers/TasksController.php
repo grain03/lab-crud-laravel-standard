@@ -75,9 +75,9 @@ class TasksController extends Controller
         return redirect()->back()->with('success', "tâche supprimée avec succès");
     }
 
-    public function show($task_id)
+    public function find($task_id)
     {
-        $task = $this->TaskRepository->show($task_id);
+        $task = $this->TaskRepository->find($task_id);
         return view('tasks.show', compact('task'));
     }
 }
