@@ -14,7 +14,6 @@ abstract class BaseRepository
         $this->model = $model;
     }
     abstract function getFieldData(): array;
-    abstract function model(): string;
 
     public function index()
     {

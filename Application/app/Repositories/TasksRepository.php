@@ -16,9 +16,6 @@
     public function getFieldData():array{
         return $this->fieldTask;
     }
-    public function model():string{
-        return Task::class;
-    }
 
     public function store($request){
         $this->model->create($request);

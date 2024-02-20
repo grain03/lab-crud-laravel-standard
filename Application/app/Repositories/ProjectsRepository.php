@@ -16,9 +16,6 @@
     public function getFieldData():array{
         return $this->fieldProject;
     }
-    public function model():string{
-        return Project::class;
-    }
 
     public function searchProjects($searchTask)
     {
